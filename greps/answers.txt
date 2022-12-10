@@ -1,15 +1,29 @@
 # Part 1
 ### a)
-
-
+ grep -p "^beed" forest/filescan_00.1 > captured/beedrill.txt
+grep -p "^blas" forest/filescan_00.1 > captured/blastoise.txt
+grep -p "^bulb" forest/filescan_00.1 captured/bulbasaur.txt
+grep -p "^butt" forest/filescan_00.1 > captured/butterfree.txt
 
 
 ### b)
-
-
+grep -p "izard$" forest/filescan_00.2 > captured/charizard.txt
+grep -p "mander$" forest/filescan_00.2 > captured/charmander.txt
+grep -p "meleon$" forest/filescan_00.2 >captured/charmeleon.txt
 
 ### c)
 
+
+grep -p "^ivys" forest/filescan_00.3 >captured/ivysaur.txt
+ grep -p "^jigg" forest/filescan_00.3 >captured/jigglypuff.txt
+ grep -p "^meow" forest/filescan_00.3 >captured/meowth.txt
+ grep -p "^pika" forest/filescan_00.3 >captured/pikachu.txt
+
+ ### file 4
+ grep -p "^psy" forest/filescan_00.4 >captured/psyduck.txt
+ grep -p "^squ" forest/filescan_00.4 >captured/squirtle.txt
+ grep -p "^venu" forest/filescan_00.4 > captured/venusaur.txt
+ grep -p "^wart" forest/filescan_00.4 > captured/wartortle.txt
 
 
 
@@ -25,13 +39,16 @@
 # Part 2
 ### a)
 
-
-
-
+prathibha@Zipcoders-MacBook-Pro-8 captured % ls|grep -v "inst" |grep -v "Count" | wc -l
 
 
 ### b)
 
+prathibha@Zipcoders-MacBook-Pro-8 Grep.Data.CatchEmAll2 % find captured/  -type f -exec wc -l {} + | sort -rn |head -n 4
+     541 total
+      40 captured//pikachu.txt
+      40 captured//charizard.txt
+      40 captured//beedrill.txt
 
 
 
